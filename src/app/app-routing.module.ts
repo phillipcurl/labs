@@ -5,6 +5,14 @@ const routes: Routes = [
   {
     path: '',
     children: []
+  },
+  {
+    path: 'work',
+    loadChildren: './work/work.module#WorkModule'
+  },
+  {
+    path: 'services',
+    loadChildren: './services/services.module#ServicesModule'
   }
 ];
 
